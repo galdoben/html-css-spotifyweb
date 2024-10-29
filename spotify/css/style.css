@@ -32,7 +32,7 @@ main .sidebar{
     color: rgb(162, 157, 157);
 }
 .home ul li a:hover{
-    text-decoration: underline;
+    color: white;
 }
 .home ul li a{
     text-decoration: none;
@@ -84,6 +84,15 @@ main .sidebar{
     align-self: center;
     justify-self: end;
     margin-right: 10px;
+    padding: 10px;
+    border-radius: 40%;
+    width: 200px;
+    color: white;
+    background-color: rgb(20, 23, 22);
+    border: white solid 1px;
+}
+.btn:hover{
+    transform: scale(1.1);
 }
 .container-music{
     overflow: auto;
@@ -102,7 +111,7 @@ main .sidebar{
     margin: 0 7px;
 }
 .nav ul li a:hover{
-    text-decoration: underline;
+    color: white;
     
 }
 
@@ -176,4 +185,19 @@ h5{
     align-self: center;
     margin-left: 5px;
 
+}
+.iconefoot{
+    display: flex;
+    color: rgb(169, 164, 164);
+    margin-top: 13px;
+    margin-left: 20px;
+    justify-content: space-between;
+
+}
+.iconefoot:hover{
+    color: white;
+}
+.titlefoot h4:hover{
+    text-decoration: underline;
+    color: white;
 }
