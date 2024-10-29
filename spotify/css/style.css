@@ -6,9 +6,9 @@
 }
 
 footer{
-    position: fixed;
+   display: flex;
     width: 100vw;
-    bottom: 0;
+    position: fixed;
     height: 80px;
     background-color: rgb(52, 52, 55);
 }
@@ -20,6 +20,7 @@ main .sidebar{
     width: 230px;
     height: 100%;
     overflow: auto;
+    position: relative;
 }
 
 .sidebar img{
@@ -47,6 +48,32 @@ main .sidebar{
     display: flex;
     height: 100%;
 }
+.home .fa-regular{
+    color: lightgray;
+    font-size: 2rem;
+}
+.home h3{
+    color: white;
+    text-align: left;
+    margin: 15px 0;
+
+}
+.abs{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.abs .fa-regular{
+    font-size: 0.7rem;
+    margin-right: 9px;
+}
+
+
+
+
+
+
 .topbar{
     display: grid;
     background-color: rgb(20, 23, 22);
@@ -59,7 +86,8 @@ main .sidebar{
     margin-right: 10px;
 }
 .container-music{
-    background-color: rgb(42, 41, 51);
+    overflow: auto;
+    background-color: rgb(38, 37, 42);
     width: 100%;
 }
 .nav ul{
@@ -80,24 +108,72 @@ main .sidebar{
 
 
 
-
-
 .title {
     color: white;
-    padding: 30px 15px;
+    padding: 30px 5px;
 }
 .container-card{
     display: flex;
+    
+}
+.card{
+    position: relative;
+    cursor: pointer;
     width: calc(100% / 6);
+    padding: 0px 3px;
 }
 .card img{
     width: 100%;
-    
-    
-    margin: 0 3px;
+}
+.card .fa-regular{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    display: none;
+}
+.card:hover .fa-regular{
+    display: block;
+}
+.card .fa-regular{
+    color: white;
+    font-size: 3rem;
+}
+.round{ 
+border-radius: 50%;
+overflow: hidden;
 }
 
-@media screen and (min-width:1100px) {
+
+
+h3{
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+}
     
+ h4{
+    color: rgb(169, 164, 164);
+    font-size: 0.6rem;
+    text-align: center;
+   
+}
+h5{
+    color: rgb(169, 164, 164);
+    margin-top: 10px;
+}
+
+.container-foot{
+    display: flex;
+    width: 230px;
+    padding: 20px 20px;
+}
+.container-foot img{
+    width: 40px;
     
+}
+.titlefoot{
+    text-align: center;
+    align-self: center;
+    margin-left: 5px;
+
 }
