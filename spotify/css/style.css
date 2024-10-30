@@ -85,7 +85,7 @@ main .sidebar{
     justify-self: end;
     margin-right: 10px;
     padding: 10px;
-    border-radius: 40%;
+    border-radius: 20px;
     width: 200px;
     color: white;
     background-color: rgb(20, 23, 22);
@@ -173,7 +173,7 @@ h5{
 
 .container-foot{
     display: flex;
-    width: 230px;
+    width: 100vwpx;
     padding: 20px 20px;
 }
 .container-foot img{
@@ -200,4 +200,37 @@ h5{
 .titlefoot h4:hover{
     text-decoration: underline;
     color: white;
+}
+
+
+
+.advance{
+   padding-left: 300px;
+}
+.advance .fa-solid{
+    margin: 10px 10px;
+    color: white;
+}
+.advance .fa-regular{
+    margin: 10px 10px;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.line{
+   
+    width: 350px;
+    height: 3px;
+    background-color: lightgrey;
+    
+    
+}
+.advance-two{
+    display: flex;
+}
+.line-two{
+
+    width: 200px;
+    height: 3px;
+    background-color: lightgray;
 }
