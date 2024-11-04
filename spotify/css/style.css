@@ -33,6 +33,10 @@ main .sidebar{
     color: rgb(162, 157, 157);
     font-size: 2rem;
 }
+.home-two .fa-solid:hover{
+    color: white;
+}
+
 .home ul li a:hover{
     color: white;
 }
@@ -216,6 +220,7 @@ h5{
 
 .container-foot img{
     width: 40px;
+    margin-top: 10px;
     
 }
 .titlefoot{
@@ -225,11 +230,9 @@ h5{
 
 }
 .iconefoot{
-    display: flex;
     color: rgb(169, 164, 164);
     margin-top: 13px;
     margin-left: 20px;
-    justify-content: space-between;
 
 }
 .iconefoot:hover{
@@ -249,9 +252,13 @@ h5{
     color: white;
 }
 .advance .fa-regular{
-    margin: 10px 10px;
+    padding-top: 3px;
+    margin: 0 15px;
     color: white;
     font-size: 1.7rem;
+}
+.advance .fa-regular:hover{
+    transform: scale(1.1);
 }
 .play-buttons{
     display: flex;
