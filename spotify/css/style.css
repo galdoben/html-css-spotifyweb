@@ -21,6 +21,7 @@ main .sidebar{
     height: 100%;
     overflow: auto;
     position: relative;
+    padding-bottom: 80px;
 }
 
 .sidebar img{
@@ -28,8 +29,9 @@ main .sidebar{
     margin: 20px 15px;
 }
 
-.fa-solid{
+.home-two .fa-solid{
     color: rgb(162, 157, 157);
+    font-size: 2rem;
 }
 .home ul li a:hover{
     color: white;
@@ -40,19 +42,43 @@ main .sidebar{
     
 }
 .home ul li{
-    margin: 10px 15px;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
 }
 
 .container-flex{
     display: flex;
     height: 100%;
 }
-.home .fa-regular{
+.home img{
+    width: 20px;
+    margin: 10px 10px;
+}
+.home-two{
+    height: calc(100% - 180px);
+    overflow: auto;
+}
+
+.home-two ul li a:hover{
+    color: white;
+
+}
+.home-two ul li a{
+    text-decoration: none;
+    color: rgb(162, 157, 157);
+    
+}
+.home-two ul li{
+    margin: 10px 15px;
+    font-size: 0.9rem;
+}
+.home-two .fa-regular{
     color: lightgray;
     font-size: 2rem;
 }
-.home h3{
+
+.home-two h3{
     color: white;
     text-align: left;
     margin: 15px 0;
@@ -63,10 +89,12 @@ main .sidebar{
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: black;
 }
 .abs .fa-regular{
-    font-size: 0.7rem;
-    margin-right: 9px;
+    font-size: 0.8rem;
+    margin: 8px;
+    color: lightgrey;
 }
 
 
@@ -109,6 +137,7 @@ main .sidebar{
     text-decoration: none;
     color: rgb(169, 164, 164);
     margin: 0 7px;
+    font-size: 0.9rem;
 }
 .nav ul li a:hover{
     color: white;
@@ -123,6 +152,7 @@ main .sidebar{
 }
 .container-card{
     display: flex;
+    
     
 }
 .card{
@@ -173,9 +203,17 @@ h5{
 
 .container-foot{
     display: flex;
-    width: 100vwpx;
-    padding: 20px 20px;
+    width: 100%;
+    padding: 10px;
+    height: 80px;
+    justify-content: space-between;
 }
+.left-foot{
+    width: 230px;
+    display: flex;
+}
+
+
 .container-foot img{
     width: 40px;
     
@@ -203,9 +241,8 @@ h5{
 }
 
 
-
 .advance{
-   padding-left: 300px;
+    width: 40%;
 }
 .advance .fa-solid{
     margin: 10px 10px;
@@ -216,21 +253,90 @@ h5{
     color: white;
     font-size: 1.7rem;
 }
+.play-buttons{
+    display: flex;
+    justify-content: center;
+}
+.center-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    color: white;
+    font-size: 0.7rem;
+}
+
 
 .line{
-   
-    width: 350px;
+   display: flex;
+    width: 80%;
     height: 3px;
     background-color: lightgrey;
     
-    
 }
 .advance-two{
+    width: 200px;
     display: flex;
+    align-items: center;
+}
+.advance-two .fa-solid{
+    margin: 10px 10px;
+    color: white;
 }
 .line-two{
 
-    width: 200px;
+    width: 190px;
     height: 3px;
     background-color: lightgray;
+}
+
+
+@media screen and (max-width:1100px) {
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: calc(100% / 4);
+        padding: 10px;
+    }
+}
+@media screen and (max-width:700px) {
+    .nav ul{
+        flex-wrap: wrap;
+    }
+    .nav ul li{
+        padding: 10px;
+    }
+    .card{
+        width: calc(100% / 2);
+        padding: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .sidebar strong{
+        display: none;
+
+    }
+    .sidebar{
+        max-width:fit-content
+    }
+    .sidebar .logo{
+        display: none;
+    }
+    .home-two{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+    .abs h3{
+        display: none;
+    }
+    .abs a{
+        display: none;
+    }
+    
+
 }
