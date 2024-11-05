@@ -28,10 +28,15 @@ main .sidebar{
     width: 130px;
     margin: 20px 15px;
 }
+.logo img:nth-child(2){
+    width: 20px;
+    display: none;
+}
 
 .home-two .fa-solid{
     color: rgb(162, 157, 157);
     font-size: 2rem;
+    vertical-align: middle;
 }
 .home-two .fa-solid:hover{
     color: white;
@@ -168,6 +173,9 @@ main .sidebar{
 .card img{
     width: 100%;
 }
+.card img:hover{
+    opacity: 0.5;
+}
 .card .fa-regular{
     position: absolute;
     top: 80px;
@@ -276,12 +284,26 @@ span{
 
 
 .line{
-   display: flex;
+    position: relative;
+    display: flex;
     width: 80%;
     height: 3px;
-    background-color: lightgrey;
+    background-color: rgb(176, 173, 173);
     
 }
+.linegreen{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: 3px;
+    background-color: white;
+
+}
+.linegreen:hover{
+    background-color: rgb(160, 230, 63);
+}
+
 .advance-two{
     width: 200px;
     display: flex;
@@ -292,10 +314,19 @@ span{
     color: white;
 }
 .line-two{
-
+    position: relative;
     width: 190px;
     height: 3px;
-    background-color: lightgray;
+    background-color: rgb(176, 173, 173);
+}
+.linetwogreen{
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background-color: white;
+}
+.linetwogreen:hover{
+    background-color: rgb(160, 230, 63);
 }
 
 
@@ -328,7 +359,7 @@ span{
     .sidebar{
         max-width:fit-content
     }
-    .sidebar .logo{
+    .sidebar .logo img:nth-child(1){
         display: none;
     }
     .home-two{
@@ -343,6 +374,9 @@ span{
     }
     .abs a{
         display: none;
+    }
+    .logo img:nth-child(2){
+        display: block;
     }
     
 
